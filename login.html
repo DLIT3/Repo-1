@@ -1,0 +1,124 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name= "viewpoint" content="width=device-width">
+  <meta name= "description" content="We are SunBank, the greatest innovators in banking">
+  <meta mame= "keywords" content="SunBank, sunbank, online banking, bank">
+  <meta name= "author" content="Animanihacks">
+  <title> SunBank | Login</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+  <script crossorigin src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  <script crossorigin src="https://unpkg.com/axios@0.18.0/dist/axios.min.js"></script>
+  <script crossorigin src="https://unpkg.com/jssha@2.3.1/src/sha.js"></script>
+  <script type="text/javascript" src="./server.js"></script>
+  <script type="text/javascript" src="./generate_token.js"></script>
+  <script type="text/javascript" src="./dummy_data.js"></script>
+</head>
+<body>
+    <!--Navgation-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="branding">
+          <a class="navbar-brand" href="#"><span class="highlight">Sun</span>Bank</a>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Personal
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Wallet</a></li>
+                <li><a href="statements.html">Account</a></li>
+                <li><a href="schedule_payments.html">Payments</a></li>
+                <li><a href="payments.html">Utilities</a></li>
+                <li><a href="#">Loan</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Private
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Wallet</a></li>
+                <li><a href="statements.html">Account</a></li>
+                <li><a href="schedule_payments.html">Payments</a></li>
+                <li><a href="payments.html">Utilities</a></li>
+                <li><a href="#">Loan</a></li>
+                <li><a href="#">Wealth Management</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Business
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Wallet</a></li>
+                <li><a href="statements.html">Account</a></li>
+                <li><a href="schedule_payments.html">Payments</a></li>
+                <li><a href="payments.html">Utilities</a></li>
+                <li><a href="#">Start my business</a></li>
+                <li><a href="#">International banking</a></li>
+              </ul>
+            </li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="activate_account.html">Activate Account</a></li>
+                <li><a href="deactivate_account.html">Deactivate Account</a></li>
+                <li><a href="reactivate_account.html">Reactivate Account</a></li>
+                <li><a href="remove_beneficiary.html">Remove Beneficiary</a></li>
+                <li><a href="add_beneficiary.html">Add Beneficiary</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="create_account.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+  <!-- NOTE: Log in Form -->
+  <div align="center">
+    <h2 id="welcome">LOG IN</h2>
+    <div id="login">
+      <input type="text" placeholder="USER ID" id="user_id">
+      <br>
+      <input type="password" placeholder="PASSWORD" id="password">
+      <br>
+      <input type="submit" value="LOG IN" id="signInBtn" onclick= this.onSubmit()>
+      <br>
+      <a href="forgot_password.html">FORGOT PASSWORD</a>
+      <div id="signUpMsg">DON'T HAVE AN ACCOUNT? <a href="create_account.html">APPLY NOW</a></div>
+    </div>
+  </div>
+
+
+
+  <br>
+  <br>
+  <footer>
+    <p>SunBank&trade; 2018</p>
+  </footer>
+
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script type="text/javascript" src="login.js"></script>
+</body>
+
+</html>
